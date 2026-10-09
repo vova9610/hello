@@ -131,7 +131,7 @@ class OzonSellerClient
 	/** Список складов FBS/rFBS. */
 	public function warehouseList()
 	{
-		return $this->request('/v1/warehouse/list');
+		return $this->request('/v2/warehouse/list', array('limit' => 100));
 	}
 
 	/** Список отправлений FBS за период (даты в формате ISO 8601). */
