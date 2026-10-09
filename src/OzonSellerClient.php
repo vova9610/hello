@@ -72,7 +72,7 @@ class OzonSellerClient
 		));
 	}
 
-	private static function loadEnvFile($path)
+	public static function loadEnvFile($path)
 	{
 		if (!is_readable($path)) {
 			return;
